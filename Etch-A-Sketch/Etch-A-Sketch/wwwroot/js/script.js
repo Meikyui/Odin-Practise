@@ -1,23 +1,6 @@
-﻿//const container = document.querySelector('.container');
-//let gridSize = 95;
-//for (let i = 0; i < gridSize  * gridSize; i++)
-//{
-//    const square = document.createElement('div');
-//    square.classList.add('square');
-//    square.style.width = `calc(100% / ${gridSize})`;
-//    container.appendChild(square);
-//}
+﻿let isMouseDown = false;
 
-//const squares = document.querySelectorAll('.square');
-
-//squares.forEach(square => {
-//    square.addEventListener('mouseover', () => {
-//        square.style.backgroundColor = 'black';
-//    });
-//});
-
-let isMouseDown = false;
-
+// Add event listeners to handle mouse down and up events.
 document.body.addEventListener('mousedown', (e) => {
     if (e.button === 0) {
         isMouseDown = true;
@@ -25,15 +8,15 @@ document.body.addEventListener('mousedown', (e) => {
     }
 });
 
-//document.body.addEventListener('mouseup', () => {
-//    isMouseDown = false;
-//});
-
+// Prevent behavior for mouseup outside of bounds to avoid issues with dragging.
 window.addEventListener('mouseup', () => {
     isMouseDown = false;
 });
 
-
+/**
+ * Function to create a grid of squares.
+ * @param {number} size - The number of squares, both width and height of the grid example : 16 for a 16x16 grid.
+ */
 function createGrid(size) {
 
     const container = document.querySelector('.container');
@@ -59,6 +42,10 @@ function createGrid(size) {
 }
 
 createGrid(16);
+
+/**
+ * Function to reset the grid take the user input or the new grid size.
+ */
 function resetGrid() {
     let gridSize = prompt("Enter new grid size (1-100):");
     gridSize = parseInt(gridSize);
