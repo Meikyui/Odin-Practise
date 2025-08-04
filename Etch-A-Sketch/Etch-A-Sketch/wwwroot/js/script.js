@@ -7,3 +7,11 @@ for (let i = 0; i < gridSize  * gridSize; i++)
     square.style.width = `calc(100% / ${gridSize})`;
     container.appendChild(square);
 }
+
+const squares = document.querySelectorAll('.square');
+
+squares.forEach(square => {
+    square.addEventListener('mouseover', () => {
+        square.style.backgroundColor = 'black';
+    });
+});
