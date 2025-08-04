@@ -18,8 +18,11 @@
 
 let isMouseDown = false;
 
-document.body.addEventListener('mousedown', () => {
-    isMouseDown = true;
+document.body.addEventListener('mousedown', (e) => {
+    if (e.button === 0) {
+        isMouseDown = true;
+        e.preventDefault();
+    }
 });
 
 document.body.addEventListener('mouseup', () => {
@@ -37,18 +40,15 @@ function createGrid(size) {
         square.classList.add('square');
         square.style.width = `calc(100% / ${size})`;
 
-        square.addEventListener('mousedown', () => {
-            if (isMouseDown) {
-                square.style.backgroundColor = 'black';
-            }
-           
-        });
-
         square.addEventListener('mouseover', () => {
             if (isMouseDown) {
                 square.style.backgroundColor = 'black';
             }
-         });
+        });
+
+        square.addEventListener('mousedown', () => {
+                square.style.backgroundColor = 'black';     
+        });
 
         container.appendChild(square);
     }
