@@ -25,7 +25,11 @@ document.body.addEventListener('mousedown', (e) => {
     }
 });
 
-document.body.addEventListener('mouseup', () => {
+//document.body.addEventListener('mouseup', () => {
+//    isMouseDown = false;
+//});
+
+window.addEventListener('mouseup', () => {
     isMouseDown = false;
 });
 
@@ -54,7 +58,7 @@ function createGrid(size) {
     }
 }
 
-/*createGrid(16);*/
+createGrid(16);
 function resetGrid() {
     let gridSize = prompt("Enter new grid size (1-100):");
     gridSize = parseInt(gridSize);
