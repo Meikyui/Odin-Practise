@@ -16,6 +16,17 @@
 //    });
 //});
 
+let isMouseDown = false;
+
+document.body.addEventListener('mousedown', () => {
+    isMouseDown = true;
+});
+
+document.body.addEventListener('mouseup', () => {
+    isMouseDown = false;
+});
+
+
 function createGrid(size) {
 
     const container = document.querySelector('.container');
@@ -26,15 +37,24 @@ function createGrid(size) {
         square.classList.add('square');
         square.style.width = `calc(100% / ${size})`;
 
-        square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = 'black';
+        square.addEventListener('mousedown', () => {
+            if (isMouseDown) {
+                square.style.backgroundColor = 'black';
+            }
+           
         });
+
+        square.addEventListener('mouseover', () => {
+            if (isMouseDown) {
+                square.style.backgroundColor = 'black';
+            }
+         });
 
         container.appendChild(square);
     }
 }
 
-createGrid(16);
+/*createGrid(16);*/
 function resetGrid() {
     let gridSize = prompt("Enter new grid size (1-100):");
     gridSize = parseInt(gridSize);
