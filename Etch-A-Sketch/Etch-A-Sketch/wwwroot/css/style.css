@@ -1,0 +1,26 @@
+﻿.container {
+    display:flex;
+    width: 960px;
+/*    height: 400px;
+*/    /*justify-content: space-between;*/
+      flex-wrap: wrap;
+    border: 1px solid red;
+}
+
+.square {
+    /*flex:1;*/
+    border: 1px solid black;
+    /*width: 25px;*/
+    /*width: calc(100%/16);*/
+    height: 25px;
+    box-sizing: border-box;
+}
+
+#gridResetButton {
+    position: relative;
+    z-index: 10;
+    margin: 20px;
+    padding: 10px;
+    width:100px;
+    height:100px;
+}
