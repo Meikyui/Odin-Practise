@@ -8,13 +8,13 @@
 //    container.appendChild(square);
 //}
 
-const squares = document.querySelectorAll('.square');
+//const squares = document.querySelectorAll('.square');
 
-squares.forEach(square => {
-    square.addEventListener('mouseover', () => {
-        square.style.backgroundColor = 'black';
-    });
-});
+//squares.forEach(square => {
+//    square.addEventListener('mouseover', () => {
+//        square.style.backgroundColor = 'black';
+//    });
+//});
 
 function createGrid(size) {
 
@@ -25,6 +25,11 @@ function createGrid(size) {
         const square = document.createElement('div');
         square.classList.add('square');
         square.style.width = `calc(100% / ${size})`;
+
+        square.addEventListener('mouseover', () => {
+            square.style.backgroundColor = 'black';
+        });
+
         container.appendChild(square);
     }
 }
