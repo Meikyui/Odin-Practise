@@ -35,3 +35,17 @@ function createGrid(size) {
 }
 
 createGrid(16);
+function resetGrid() {
+    let gridSize = prompt("Enter new grid size (1-100):");
+    gridSize = parseInt(gridSize);
+
+    if (isNaN(gridSize) || gridSize < 1 || gridSize > 100)
+    {
+        alert("Please enter a valid number between 1 and 100.");
+    }
+    else
+    {
+        createGrid(gridSize);
+    }
+}
+
