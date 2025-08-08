@@ -1,6 +1,117 @@
-﻿namespace Calculator.wwwroot.css
-{
-    public class style
-    {
-    }
+﻿.calculator {
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.display_Field {
+    width: 100%;
+    height: 25px;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    
+}
+
+.display {
+    flex: 1;
+    /*padding: 10px;*/
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.input_Button_Panel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 10px;
+    grid-template-areas:
+        "clear CE  delete division"
+        "seven eight nine multiplication"
+        "four five six subtraction"
+        "one two three addition"
+        "sign zero dot equal";
+}
+
+#clear_Button {
+    grid-area: clear;
+}
+
+#clearEntry_Button {
+    grid-area: CE;
+}
+
+#delete_Button {
+    grid-area: delete;
+}
+
+#seven_Button {
+    grid-area: seven;
+}
+
+#eight_Button {
+    grid-area: eight;
+}
+
+#nine_Button {
+    grid-area: nine;
+}
+
+#division_Button {
+    grid-area: division;
+}
+
+#four_Button {
+    grid-area: four;
+}
+
+#five_Button {
+    grid-area: five;
+}
+
+#six_Button {
+    grid-area: six;
+}
+
+#multiplication_Button {
+    grid-area: multiplication;
+}
+
+#one_Button {
+    grid-area: one;
+}
+
+#two_Button {
+    grid-area: two;
+}
+
+#three_Button {
+    grid-area: three;
+}
+
+#subtraction_Button {
+    grid-area: subtraction;
+}
+
+#signNegate_Button {
+    grid-area: sign;
+}
+
+#zero_Button {
+    grid-area: zero;
+}
+
+#dot_Button {
+    grid-area: dot;
+}
+
+#equal_Button {
+    grid-area: equal;
 }
