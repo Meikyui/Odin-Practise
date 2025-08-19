@@ -4,11 +4,15 @@ let result = '0';
 let secondNumberInput = false;
 let operation = '';
 
+const deleteButton = document.getElementById('delete_Button');
+deleteButton.addEventListener('click', deleteLastDigit);
+
 const action = {
     '+': () => addition(),
     '-': () => substraction(),
     'x': () => multiplication(),
     '÷': () => division(),
+    /*'⌫':() => deleteLastDigit(),*/
     '=': () => calculate(),
 };
 
@@ -85,6 +89,21 @@ function division()
     secondNumberInput = true;
     updateDisplay('÷');
     operation = '÷';
+}
+
+function deleteLastDigit()
+{
+    if (!secondNumberInput) {
+        firstNumber = firstNumber.slice(0, -1) || '0';
+        updateDisplay(firstNumber);
+        
+    }
+    else if (secondNumberInput)
+    {
+        secondNumber = secondNumber.slice(0, -1) || '0';
+        updateDisplay(secondNumber);
+        updateHistory(firstNumber + operation + secondNumber);
+    }
 }
 
 function calculate()

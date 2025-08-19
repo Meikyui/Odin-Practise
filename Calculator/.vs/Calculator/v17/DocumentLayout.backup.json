@@ -49,9 +49,22 @@
               "RelativeDocumentMoniker": "Calculator\\wwwroot\\js\\script.js",
               "ToolTip": "C:\\Users\\Acer Nitro 5\\Desktop\\Practise Projects\\Calculator\\Calculator\\wwwroot\\js\\script.js",
               "RelativeToolTip": "Calculator\\wwwroot\\js\\script.js",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAIwGkAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAwwGgAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-08-07T12:19:30.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Acer Nitro 5\\Desktop\\Practise Projects\\Calculator\\Calculator\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Calculator\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\Acer Nitro 5\\Desktop\\Practise Projects\\Calculator\\Calculator\\wwwroot\\index.html",
+              "RelativeToolTip": "Calculator\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-07T12:18:30.681Z",
               "EditorCaption": ""
             },
             {
@@ -65,19 +78,6 @@
               "ViewState": "AgIAAFoAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-08-07T12:19:10.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\Acer Nitro 5\\Desktop\\Practise Projects\\Calculator\\Calculator\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "Calculator\\wwwroot\\index.html",
-              "ToolTip": "C:\\Users\\Acer Nitro 5\\Desktop\\Practise Projects\\Calculator\\Calculator\\wwwroot\\index.html",
-              "RelativeToolTip": "Calculator\\wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-08-07T12:18:30.681Z",
               "EditorCaption": ""
             }
           ]
