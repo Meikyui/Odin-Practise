@@ -6,6 +6,7 @@ let operation = '';
 
 const action = {
     '+': () => addition(),
+    '-': () => substraction(),
     '=': () => calculate(),
 };
 
@@ -43,7 +44,7 @@ function addDigit(value)
             secondNumber += value;
         }
         updateDisplay(secondNumber);
-        updateHistory(firstNumber + '+' + secondNumber);
+        updateHistory(firstNumber + operation + secondNumber);
     }
 };
 
@@ -63,6 +64,13 @@ function addition()
     operation = '+';
 };
 
+function substraction()
+{
+    secondNumberInput = true;
+    updateDisplay('-');
+    operation = '-';
+}
+
 function calculate()
 {
     const number1 = parseFloat(firstNumber);
@@ -71,6 +79,9 @@ function calculate()
     switch (operation) {
         case '+':
             result = number1 + number2;
+            break;
+        case '-':
+            result = number1 - number2;
             break;
     }
 
