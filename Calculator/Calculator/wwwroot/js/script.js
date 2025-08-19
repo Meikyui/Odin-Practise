@@ -7,6 +7,8 @@ let operation = '';
 const action = {
     '+': () => addition(),
     '-': () => substraction(),
+    'x': () => multiplication(),
+    '÷': () => division(),
     '=': () => calculate(),
 };
 
@@ -71,6 +73,20 @@ function substraction()
     operation = '-';
 }
 
+function multiplication()
+{
+    secondNumberInput = true;
+    updateDisplay('x');
+    operation = 'x';
+}
+
+function division()
+{
+    secondNumberInput = true;
+    updateDisplay('÷');
+    operation = '÷';
+}
+
 function calculate()
 {
     const number1 = parseFloat(firstNumber);
@@ -83,6 +99,19 @@ function calculate()
         case '-':
             result = number1 - number2;
             break;
+        case 'x':
+            result = number1 * number2;
+            break;
+        case '÷':
+            if (number2 === 0) {
+                alert('Cannot divide by zero');
+                return;
+            }
+            else
+            {
+                result = number1 / number2;
+                break;
+            }
     }
 
     updateDisplay(result);
