@@ -7,6 +7,9 @@ let operation = '';
 const deleteButton = document.getElementById('delete_Button');
 deleteButton.addEventListener('click', deleteLastDigit);
 
+const clearButton = document.getElementById('clear_Button');
+clearButton.addEventListener('click', clearAll);
+
 const action = {
     '+': () => addition(),
     '-': () => substraction(),
@@ -104,6 +107,17 @@ function deleteLastDigit()
         updateDisplay(secondNumber);
         updateHistory(firstNumber + operation + secondNumber);
     }
+}
+
+function clearAll()
+{
+    firstNumber = '0';
+    secondNumber = '';
+    result = '0';
+    secondNumberInput = false;
+    operation = '';
+    updateDisplay(firstNumber);
+    updateHistory('');
 }
 
 function calculate()
