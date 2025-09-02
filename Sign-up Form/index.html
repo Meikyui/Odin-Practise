@@ -14,7 +14,7 @@
         </div>
         <p id="creditCreator">Photo by <span class="Underline">Halie West</span> on <span class="Underline">Unsplash</span></p>
     </div>
-    <div class="FormContainer">
+    <div class="SignInContainer">
         <div class="IntroductoryContainer">
                 <p>This is not a real online service! You know you need something<br>
                    like this in your life to help you realize your deepest dreams.
@@ -23,32 +23,45 @@
                 <p>You <span class="italic">know</span> you want to.</p>
                 </p>
             </div>
-            <form>
-                <div class="InputContainer">
+            <form id="FormContainer">
+                <div id="FormText">
                     <h1>Lets' do this!</h1>
-                    <!-- <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required> -->
-                     <div class="field">
-                        <label for="name">Name</label>
-                        <input type="text" id="name">
-                     </div>
-                    <div class="field">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                   
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required> 
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" required>
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
-                    <label for="ConfirmPassword">Confirm Password</label>
-                    <input type="password" id="ConfirmPassword" name="ConfirmPassword" required>
                 </div>
-            </form> cv
+                <div class="testcontainer">
+                    <div class="inputContainer">
+                    <div class="inputField">
+                        <label class="labelDescription" for="FirstName">FIRST NAME</label>
+                        <input type="text" id="inputFirstName" name="firstName" required>
+                    </div>
+                    <div class="inputField">
+                        <label class="labelDescription" for="LastName">LAST NAME</label>
+                        <input type="text" id="inputLastName" name="lastName" required>
+                    </div>
+                    <div class="inputField">
+                        <label class="labelDescription" for="Email">EMAIL</label>
+                        <input type="email" id="inputEmail" name="email" required>
+                    </div>
+                    <div class="inputField">
+                         <label class="labelDescription" for="phoneNumber">PHONE NUMBER</label>
+                         <input type="text" id="inputPhoneNumber" name="phoneNumber" required>
+                    </div>
+                   <div class="inputField">
+                        <label class="labelDescription" for="Password">PASSWORD</label>
+                        <input type="password" id="inputPassword" name="password" required>
+                        <span id="passwordError" class="error"></span>
+                   </div>
+                    <div class="inputField">
+                        <label class="labelDescription" for="ConfirmPassword">CONFIRM PASSWORD</label>
+                        <input type="password" id="inputConfirmPassword" name="ConfirmPassword" required>
+                        <span id="confirmPasswordError" class="error"></span>
+                    </div>
+                </div>
+                <div id="FormOutput"></div>
+                </div>
+                
+                <button class="submitButton" type="submit"><b>Create Account</b></button>
+            </form>
             <div class="LoginFooter">
-                <button type="submit">Create Account</button>
                 <p>Already have an account? <a href="#">Log in</a></p>
             </div>
     </div>
