@@ -5,7 +5,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Index.html",
-            "file": "${workspaceFolder}/Sign-up Form/index.html"
+            "file": "${workspaceFolder}/Dashboard Project/index.html"
         }
     ]
 }
