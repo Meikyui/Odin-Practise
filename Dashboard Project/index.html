@@ -7,23 +7,78 @@
 </head>
 <body>
     <div class="dashboardContainer">
-        <div class="section" id="sidebar">sidebar
+        <div class="section" id="sidebar">
             <div class="sidebarContent" id="dashboardLogo">
-
+                <img class="dashboardImage" src="images/view-dashboard.svg" alt="dashboard logo" class="dashboardLogoImg">
+                <span class="dashboardText">Dashboard</span>
             </div>
             <div class="sidebarContent" id="sidebarNavigation">
+                <div class="navItem" id="navHome">
+                    <img class="navIcon" src="images/home-outline.svg" alt="home icon">
+                    <span class="navText">Home</span>
+                </div>
+                <div class="navItem" id="navProjects">
+                    <img class="navIcon" src="images/folder-outline.svg" alt="projects icon">
+                    <span class="navText">Projects</span>
+                </div>
+                <div class="navItem" id="navTeams">
+                    <img class="navIcon" src="images/people-outline.svg" alt="teams icon">
+                    <span class="navText">Teams</span>
+                </div>
+                <div class="navItem" id="navCalendar">
+                    <img class="navIcon" src="images/calendar-outline.svg" alt="calendar icon">
+                    <span class="navText">Calendar</span>
+                </div>
+                <div class="navItem" id="navReports">
+                    <img class="navIcon" src="images/bar-chart-outline.svg" alt="reports icon">
+                    <span class="navText">Reports</span>
+                </div>
+                <div class="navItem" id="navSettings">
+                    <img class="navIcon" src="images/settings-outline.svg" alt="settings icon">
+                    <span class="navText">Settings</span>
+                </div>
             </div>
             <div class="sidebarContent" id="sidebarBranding">
             </div>
         </div>
-        <div class="section" id="header">header
-            <div class="headerContent" id="headerSearchbar"></div>
-            <div class="headerContent" id="headerAccountSection"></div>
-            <div class="headerContent" id="headerUserInfo"></div>
-            <div class="headerContent" id="headerButtons"></div>
+        <div class="section" id="header">
+            <div class="headerContent" id="headerSearchbar">
+                <img id="headerSearchIcon" src="images/magnify.svg" alt="search icon" class="searchIcon">
+                <form class="searchBar">
+                    <input type="text" placeholder="Search..." />
+                </form>
+            </div>
+            <div class="headerContent" id="headerAccountSection">
+                <img id="headerNotificationIcon" src="images/bell-ring-outline.svg" alt="notification icon" class="notificationIcon">
+                <div class="profilePicture">
+                    <img src="images/Honkai-Impact-3rd-artwork-Honkai-Impact-fan-art-Kiana-Kaslana-anime-girls-2142989-wallhere.com (1).jpg" alt="profile picture" class="profilePic">
+                </div>
+                <span class="userName">PlaceHolder Name</span> <!--add javascript-->
+            </div>
+            <div class="headerContent" id="headerUserInfo">
+                  <div class="profilePictureUserInfo">
+                    <img src="images/Honkai-Impact-3rd-artwork-Honkai-Impact-fan-art-Kiana-Kaslana-anime-girls-2142989-wallhere.com (1).jpg" alt="profile picture" class="profilePic">
+                </div>
+                <span class="greeting">Hi there,</span>
+                <div class="userInfoGreeting">
+                    
+                    <span class="userFullName">PlaceHolder Name</span> <!--add javascript-->
+                    <span class="userTag">@PlaceholderFirstName</span> <!--add javascript-->
+                </div>
+            </div>
+            <div class="headerContent" id="headerButtons">
+                <button class="headerBtn" id="btnNew">New</button>
+                <button class="headerBtn" id="btnUpload">Upload</button>
+                <button class="headerBtn" id="btnShare">Share</button>
+            </div>
         </div>
         <div class="section" id="mainContent">
             <div class="mainContentItems" id="projectField">maincontent
+                <div class="mainContentProjectTiles" ></div>
+                <div class="mainContentProjectTiles" ></div>
+                <div class="mainContentProjectTiles" ></div>
+                <div class="mainContentProjectTiles" ></div>
+                <div class="mainContentProjectTiles" ></div>
                 <div class="mainContentProjectTiles" ></div>
             </div>
             <div class="mainContentItems" id="announcementTile">annoucement</div>
