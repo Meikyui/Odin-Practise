@@ -25,7 +25,7 @@ body {
     grid-row-end:6;
     background-color: #1992D4;
     display:grid;
-    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
     grid-template-columns: 1fr;
 }
 
@@ -50,8 +50,8 @@ body {
     background-color: lightgrey;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-rows: auto;
 }
 
 #projectField {
@@ -150,4 +150,49 @@ body {
     margin-left: 10px;
     margin-top: 10px;
     filter: invert(1);
+}
+
+.navIcon {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    filter: invert(1);
+}
+
+.annoucementTileContainer {
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.announcementItem {
+  border-bottom: 2px solid #666;    
+}
+
+.trendingTileContainer {
+    display:grid;
+    grid-template-rows: repeat(4, 1fr);
+    border: 1px solid black;
+
+}
+
+.trendingTileContainer h4, p {
+    margin:0;
+    padding:0;
+}
+
+.trendingItem {
+    margin: 5px;
+
+}
+
+.trendingTextContent {
+    display: flex;
+    flex-direction: row;
 }
