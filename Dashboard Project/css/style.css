@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+
+}
 body {
     margin: 0%;
     padding: 0%;
@@ -50,16 +54,16 @@ body {
     background-color: lightgrey;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: auto; */
 }
 
-#projectField {
+/* #projectField {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-}
+} */
 
 #announcementTile {
     grid-column-start: 3;
@@ -76,25 +80,29 @@ body {
 }
 
 .sidebarContent {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .headerContent {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .mainContentItems {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #projectField {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 .mainContentProjectTiles {
-    border: 1px solid black;
+    border: 1px solid lightgrey;
 }
 
 #headerSearchIcon {
@@ -195,4 +203,30 @@ body {
 .trendingTextContent {
     display: flex;
     flex-direction: row;
+}
+
+.projectTileContent {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    border: 1px solid black;
+    height: 80%;
+    width: 95%;
+}
+
+.projectTileIcons {
+    display:flex;
+    justify-content: right;
+    
+}
+
+.projectTileIcons img {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    
+}
+.projectTileInfo {
+    display:flex;
+    flex-direction:column;
+    
 }
