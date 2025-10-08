@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="dashboardContainer">
@@ -12,52 +13,56 @@
                 <img class="dashboardImage" src="images/view-dashboard.svg" alt="dashboard logo" class="dashboardLogoImg">
                 <span class="dashboardText">Dashboard</span>
             </div>
-            <div class="sidebarContent" id="sidebarNavigation"> <!--need to change to a list element-->
-                <div class="navItem" id="navHome">
-                    <img class="navIcon" src="images/home.svg" alt="home icon">
-                    <span class="navText">Home</span>
-                </div>
-                <div class="navItem" id="navAccountDetails">
-                    <img class="navIcon" src="images/card-account-details.svg" alt="accountDetails icon">
-                    <span class="navText">Account Details</span>
-                </div>
-                <div class="navItem" id="navMessages">
-                    <img class="navIcon" src="images/message-reply.svg" alt="messages icon">
-                    <span class="navText">Messages</span>
-                </div>
-                <div class="navItem" id="navHistory">
-                    <img class="navIcon" src="images/clock-time-three.svg" alt="history icon">
-                    <span class="navText">History</span>
-                </div>
-                <div class="navItem" id="navTasks">
-                    <img class="navIcon" src="images/note-multiple.svg" alt="tasks icon">
-                    <span class="navText">Tasks</span>
-                </div>
-                <div class="navItem" id="navCommunities">
-                    <img class="navIcon" src="images/account-group.svg" alt="Communities icon">
-                    <span class="navText">Communities</span>
-                </div>
-            </div>
-            <div class="sidebarContent" id="sidebarBranding">
-                 <div class="navItem" id="navSettings">
-                    <img class="navIcon" src="images/cog.svg" alt="settings icon">
-                    <span class="navText">Settings</span>
-                </div>
-                <div class="navItem" id="navSupport">
-                    <img class="navIcon" src="images/help-box.svg" alt="support icon">
-                    <span class="navText">Support</span>
-                </div>
-                <div class="navItem" id="navPrivacy">
-                    <img class="navIcon" src="images/shield-check.svg" alt="privacy icon">
-                    <span class="navText">Privacy</span>
-                </div>
-            </div>
+            <nav class="sidebarContent" id="sidebarNavigation"> <!--need to change to a list element-->
+                <ul class="navList">
+                    <li class="navListItem" id="navHome">
+                        <img class="navIcon" src="images/home.svg" alt="home icon">
+                        <span class="navText">Home</span>
+                    </li>
+                    <li class="navListItem" id="navProfile">
+                        <img class="navIcon" src="images/card-account-details.svg" alt="accountProfileicon">
+                        <span class="navText">Profile</span>
+                    </li>
+                    <li class="navListItem" id="navMessages">
+                        <img class="navIcon" src="images/message-reply.svg" alt="messages icon">
+                        <span class="navText">Messages</span>
+                    </li>
+                    <li class="navListItem" id="navHistory">
+                        <img class="navIcon" src="images/clock-time-three.svg" alt="history icon">
+                        <span class="navText">History</span>
+                    </li>
+                    <li class="navListItem" id="navTasks">
+                        <img class="navIcon" src="images/note-multiple.svg" alt="tasks icon">
+                        <span class="navText">Tasks</span>
+                    </li>
+                    <li class="navListItem" id="navCommunities">
+                        <img class="navIcon" src="images/account-group.svg" alt="Communities icon">
+                        <span class="navText">Communities</span>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="sidebarContent" id="sidebarBranding">
+                <ul class="navList">
+                    <li class="navListItem" id="navSettings">
+                        <img class="navIcon" src="images/cog.svg" alt="settings icon">
+                        <span class="navText">Settings</span>
+                    </li>
+                    <li class="navListItem" id="navSupport">
+                        <img class="navIcon" src="images/help-box.svg" alt="support icon">
+                        <span class="navText">Support</span>
+                    </li>
+                    <li class="navListItem" id="navPrivacy">
+                        <img class="navIcon" src="images/shield-check.svg" alt="privacy icon">
+                        <span class="navText">Privacy</span>
+                    </li>
+                </ul>
+            </nav>
         </div>
         <div class="section" id="header">
             <div class="headerContent" id="headerSearchbar">
                 <img id="headerSearchIcon" src="images/magnify.svg" alt="search icon" class="searchIcon">
-                <form class="searchBar">
-                    <input type="text" placeholder="Search..." />
+                <form class="headerSearchInput">
+                    <input id="searchBar" type="text" placeholder="Search..." />
                 </form>
             </div>
             <div class="headerContent" id="headerAccountSection">
