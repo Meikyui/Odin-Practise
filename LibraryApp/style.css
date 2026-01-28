@@ -1,0 +1,27 @@
+.grid {
+    display: grid;
+
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+  
+}
+
+.container {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    min-height: 100px;
+    min-width: 100px;
+    border : 1px solid #000;
+}
+#LibraryBooks {
+   display:flex;
+   align-items:center;
+   flex-direction:column;
+   
+}
+
+#LibraryBooks li button{
+   margin-left:0.75rem;
+   margin-top:0.75rem;
+}
